@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>demo</title>
+</head>
+<body>
+<div id="box">
+    <div>
+        <div>
+            <p id="info">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Hic, rem?</p>
+        </div>
+    </div>
+    <div></div>
+</div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(function(){
+       var count1 = $('#info').parents().length;
+       var count2 = $('#info').parents('div').length;
+
+       console.log(count1);
+       console.log(count2);
+
+       var count3 = $('#box > *').length;
+       var count4 = $('#box').children().length;
+
+       console.log(count3);
+       console.log(count4);
+
+       var count5 = $('#info').children().length;
+       var count6 = $('#info').contents().length;
+
+       console.log(count5);
+       console.log(count6);
+    });
+</script>
+</body>
+</html>

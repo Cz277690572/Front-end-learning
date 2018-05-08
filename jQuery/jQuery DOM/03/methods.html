@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>methods</title>
+</head>
+<body>
+<div id="box1">
+    <div id="box2">
+        <div id="box3">
+            <p id="info"></p>
+            <ul>
+                <li class="item1">item1</li>
+                <li class="item2">item2</li>
+                <li class="item3">item3</li>
+                <li class="item4">item4</li>
+                <li class="item5">item5</li>
+                <li class="item6">item6</li>
+                <li class="item7">item7</li>
+                <li class="item8">item8</li>
+                <li class="item9">item9</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(function(){
+        console.log($('#box3').children());
+        console.log($('#box3').children('p'));
+
+        console.log($('#box3').contents()); // 5
+
+        console.log($('#box3').find('.item1'));
+
+        console.log('==========================================');
+        console.log($('ul, #box3').parent());
+        console.log($('ul, #box3').parent('#box2'));
+
+        console.log('==========================================');
+        console.log($('.item1').parentsUntil('#box1'));
+        console.log($('.item1').closest('div'));
+
+        console.log($('.item1').closest('#box1'));
+        console.log($('.item1').parents('#box1'));
+
+        console.log('==========================================');
+        console.log($('.item4').next('li'));
+        console.log($('.item4').nextAll('li'));
+        console.log($('.item4').nextUntil('.item7'));
+
+        console.log('==========================================');
+        console.log($('.item4').prev('li'));
+        console.log($('.item4').prevAll('li'));
+        console.log($('.item4').prevUntil('.item7'));
+
+        console.log('==========================================');
+        console.log($('.item4').siblings());
+        console.log($('.item4').siblings('.item2'));
+
+    });
+</script>
+</body>
+</html>
