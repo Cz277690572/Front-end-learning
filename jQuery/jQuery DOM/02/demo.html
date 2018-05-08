@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+    <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li id="item6">item-6</li>
+        <li>item-7</li>
+        <li>item-8</li>
+        <li>item-9</li>
+    </ul>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(function(){
+        var elements = $('li');
+        console.log(elements.length);
+
+        var elements2 = $('div');
+        // console.log(elements2[0].style.color = 'blue');  // Cannot read property 'style' of undefined无法读取未定义的属性“样式”
+        console.log(elements2.eq(0).addClass('blue'));  // no error
+        console.log(elements2.addClass('blue'));  // no error
+
+        console.log(elements[0]);
+        console.log(elements[1]);
+
+        console.log(elements.get());
+        console.log(elements.get(0));
+        console.log(elements.get(1));
+        console.log(elements.get(-1));
+
+        console.log(elements[-1]);
+        console.log(elements.get(100));
+        console.log(elements[100]);
+
+        console.log('=========================================');
+        console.log(elements.eq(0));
+        console.log($('li').eq(0));
+        console.log($('li:eq(0)'));
+
+        console.log('=========================================');
+        console.log(elements.eq(0));
+        console.log(elements.first());
+
+        console.log('=========================================');
+        console.log(elements.eq(-1));
+        console.log(elements.last());
+
+        console.log('=========================================');
+        console.log(elements.toArray());
+        console.log(elements.get());
+
+        console.log(elements.index($('#item6')));
+
+
+    });
+</script>
+</body>
+</html>
