@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+    <img id="logo" src="../logo.jpg" alt="jQuery logo" title="jQuery logo" />
+    <img id="logo2" src="../logo.jpg" alt="jQuery logo" class="img-jquery2"
+         title="jQuery logo" />
+    <input type="checkbox" id="check" tabindex="1" style="width: 50px;height: 50px;"
+    title="Check this!" desription="just a checkbox">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(function(){
+       var img = $('img');
+       var checkbox = $('#check');
+       var checkboxDu = document.getElementById('check');
+
+       console.log(img.attr('id'));
+       console.log(img.attr('class'));
+
+
+       // console.log(checkbox.attr('tabIndex'));
+       // console.log(checkbox.attr('TABINDEX'));
+        checkboxDu.checked = true;
+       console.log(checkbox.prop('checked'));
+       console.log(checkboxDu.getAttribute('checked'));
+       console.log(checkboxDu.checked);
+
+       console.log("======================================");
+       console.log(img.attr('title','new title'));
+       console.log(img.attr({
+           title: 'new title2',
+           alt: 'new alt2'
+       }));
+       console.log(checkbox.attr({
+           tabIndex:2
+       }));
+       console.log(img.attr('title',function(index, previousValue){
+           return previousValue + '-' + index;
+       }));
+
+       console.log(checkbox.attr({
+           'tabIndex': function(index,previousValue) {
+                return ++previousValue;
+           }
+       }));
+
+       console.log(img.removeAttr('title alt'));
+       console.log("=========================");
+       console.log(document.getElementById('logo').title);
+    });
+</script>
+</body>
+</html>

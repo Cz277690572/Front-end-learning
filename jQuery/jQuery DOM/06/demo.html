@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+<img id="logo" src="../logo.jpg" alt="jQuery logo" class="img-jquery" title="jQuery logo" />
+
+<input type="checkbox" id="check" tabindex="1" style="width:50px; height:50px;"
+       title="Check this!" description="just a checkbox" />
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    // tabindex 带有指定 tab 键顺序的链接：
+    $(function(){
+       var checkbox = document.getElementById('check');
+
+       console.log(checkbox);
+       console.log(checkbox.getAttribute('tabIndex'));
+       console.log(checkbox.tabIndex);
+
+       console.log(typeof checkbox.getAttribute('tabIndex'));
+       console.log(typeof checkbox.tabIndex);
+
+       console.log("====================================");
+       console.log(checkbox.getAttribute('style'));
+       console.log(checkbox.style);
+
+       console.log(typeof checkbox.getAttribute('style'));
+       console.log(typeof checkbox.style);
+       console.log(checkbox.attributes);
+
+       console.log("====================================");
+       console.log(checkbox.getAttribute('title') === checkbox.title);
+       checkbox.title = "New title!";
+       console.log(checkbox.getAttribute('title') === checkbox.title);
+
+       checkbox.setAttribute('title', 'Another title!');
+       console.log(checkbox.getAttribute('title') === checkbox.title);
+
+
+       console.log(checkbox.getAttribute('checked'));
+       console.log(checkbox.checked);
+
+       checkbox.checked = true;
+       console.log(checkbox.getAttribute('checked'));
+       console.log(checkbox.checked);
+
+       console.log(checkbox.getAttribute('description'));
+       console.log(checkbox.description);
+
+       checkbox.description = '123';
+       console.log(checkbox.getAttribute('description'));
+       console.log(checkbox.description);
+
+       checkbox.name = 'check';
+       console.log(checkbox.getAttribute('name'));
+       console.log(checkbox.name);
+       checkbox.setAttribute('name', 'Another name!');
+       console.log(checkbox.getAttribute('name'));
+       console.log(checkbox.name);
+
+        checkbox.style = "width:150px; height:150px;";
+        console.log(checkbox.getAttribute('style'));
+        console.log(checkbox.style);
+
+        checkbox.style = {
+          width:200,
+          height:200
+        };
+        console.log(checkbox.getAttribute('style'));
+        console.log(checkbox.style);
+
+        console.log("====================================");
+        var img = document.getElementById('logo');
+        console.log(img.attributes);
+
+        img.src = '../logo.jpg';
+        console.log(img.src);
+        console.log(img.getAttribute('src'));
+
+        console.log(img.class);
+        console.log(img.getAttribute('class'));
+        console.log(img.className);
+
+
+
+
+    });
+</script>
+</body>
+</html>

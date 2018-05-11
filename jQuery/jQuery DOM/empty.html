@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+
+<body>
+    <form>
+        <p>
+            <input type="text" name="text">
+        </p>
+        <p>
+            <input type="radio" name="radio" value="1"> radio1
+            <input type="radio" name="radio" value="2"> radio2
+        </p>
+        <p>
+            <input type="checkbox" name="checkbox" value="1"> checkbox1
+            <input type="checkbox" name="checkbox" value="2"> checkbox2
+        </p>
+        <p>
+            <select name="select" style="width: 200px">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </p>
+        <p>
+            <select name="multiSelect" multiple style="width: 200px">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </p>
+    </form>
+    <script src="../../vendor/jquery-1.12.4.js"></script>
+    <script>
+    $(function() {
+        // console.log($('[name="text"]').val());
+        // console.log($('[name="radio"]:checked').val());
+        // console.log($('[name="multiSelect"]').val());
+
+        console.log(
+            $('[name="checkbox"]:checked').map(function() {
+                return $(this).val();
+            }).toArray()
+        );
+    });
+    </script>
+</body>
+
+</html>

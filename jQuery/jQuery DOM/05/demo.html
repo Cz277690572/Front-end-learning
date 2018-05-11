@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+    <div id="box1">
+        <div id="box2">
+            <div id="box3">
+                <p id="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, rem?</p>
+                <ul>
+                    <li class="item1">item1</li>
+                    <li class="item2">item2</li>
+                    <li class="item3">item3</li>
+                    <li class="item4">item4</li>
+                    <li class="item5">item5</li>
+                    <li class="item6">item6</li>
+                    <li class="item7">item7</li>
+                    <li class="item8">item8
+                        <ul></ul>
+                    </li>
+                    <li class="item9">item9</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(function(){
+        console.log($("#box3").children().is('p'));
+        console.log($("#box3").children().is('img'));
+
+        //end() 方法结束当前链条中的最近的筛选操作，并将匹配元素集还原为之前的状态。
+        console.log($("#box3").children().end());
+        console.log($("#box3").end());
+
+        // console.log($("#box3").find('.item3').css('color', 'red')
+        //     .end().find('.item5').css('color', 'blue'));
+
+        // console.log($('.item3').nextUntil('.item6').css('color', 'red'));
+        // 如果不加addBack()的话，就是4和5变红，如果加上addBack()的话就是包括他自己也会变红。
+        console.log(
+            $('.item3').nextUntil('.item6').addBack().css('color','blue')
+        );
+    });
+</script>
+</body>
+</html>

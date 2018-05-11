@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+<div id="box1">
+    <div id="box2">
+        <div id="box3">
+            <p id="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, rem?</p>
+            <ul>
+                <li class="item1">item1</li>
+                <li class="item2">item2</li>
+                <li class="item3">item3</li>
+                <li class="item4">item4</li>
+                <li class="item5">item5</li>
+                <li class="item6">item6</li>
+                <li class="item7">item7</li>
+                <li class="item8">item8
+                    <ul></ul>
+                </li>
+                <li class="item9">item9</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(function(){
+        console.log($('.item1, .item2'));
+        console.log($('.item1').add('.item2'));
+        console.log("=================================");
+
+        console.log($('li').not('.item2, .item3'));
+        console.log($('li').filter('.item2, .item3'));
+        console.log("=================================");
+
+        console.log($('li').not(function (index) {
+            // console.log(index);
+            return $(this).hasClass('item1');
+        }));
+        console.log($('li').filter(function(index){
+            return $(this).hasClass('item1');
+        }));
+
+        console.log("=================================");
+        console.log($('li').has('ul'));
+
+        console.log($('li').slice(0));
+        console.log($('li').slice(3));
+        console.log($('li').slice(3, 5));// 左包右闭
+        console.log($('li').slice(-2));
+
+
+        console.log("=================================");
+        // map()方法主要用来遍历操作数组和对象，each()主要用于遍历jquery对象。
+        // each()返回的是原来的数组，并不会新创建一个数组。
+        // map()方法会返回一个新的数组。如果在没有必要的情况下使用map，则有可能造成内存浪费。
+        console.log($('div').map(function(index, domElemnet){
+            // console.log(index);
+            // console.log(domElemnet);
+            return this.id;
+        }));
+        console.log( $('li').each(function (index, domElement) {
+            this.title = this.innerText;
+        }));
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+    <img id="logo" src="../logo.jpg" alt="jQuery logo1" class="img-jquery" title="jQuery logo1" />
+    <img id="logo2" src="../logo.jpg" alt="jQuery logo2" class="img-jquery2" title="jQuery logo2" />
+    <input type="checkbox" id="check" tabIndex="1" style="width:50px; height: 50px;"
+           title="Check this!" description="just a checkbox" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(function(){
+            var img = $('img');
+            var checkbox = $('#check');
+            var checkboxDu = document.getElementById('check');
+
+            console.log(checkbox.prop('checked'));
+            console.log(checkbox.attr('checked'));
+
+            console.log(checkbox.attr('tabindex'));
+            console.log(checkbox.attr('tabIndex'));
+            console.log(checkbox.attr('TABINDEX'));
+            console.log(checkbox.prop('tabindex'));
+            console.log(checkbox.prop('tabIndex'));
+            console.log(checkbox.prop('TABINDEX'));
+            console.log("========================");
+
+            console.log(img.prop('className'));
+            console.log(img.prop('class'));
+            console.log(img.attr('class'));
+            console.log(img.attr('className'));
+
+            console.log('========================');
+            console.log(checkbox.prop('checked',true));
+            console.log(checkbox.prop('checked'));
+            console.log(checkbox.attr('checked',true));
+            console.log(checkbox.attr('checked'));
+            console.log(checkbox.prop('checked'));
+            console.log(checkboxDu.getAttribute('checked'));
+            // console.log(checkbox.attr('checked',false));
+            // console.log(checkbox.prop('checked'));
+            // console.log(checkboxDu.getAttribute('checked'));
+            // console.log(checkboxDu.checked);
+
+            console.log('========================');
+            console.log(checkbox.removeProp('checked'));
+            console.log(checkbox.prop('checked'));
+
+            console.log(checkbox.prop('checked', true));
+            console.log(checkbox.prop('checked'));
+
+            console.log(img.removeProp('title'));
+            console.log(img.attr('title'));
+
+            console.log(img.prop('title'));
+            // console.log(img.removeProp('alt'));
+            console.log(img.attr('alt'));
+            console.log(img.prop('alt'));
+        });
+    </script>
+</body>
+</html>
