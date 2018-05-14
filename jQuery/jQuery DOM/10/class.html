@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>class</title>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+        }
+        .red {
+            background-color: red;
+        }
+        .b10 {
+            border: 10px solid #000;
+        }
+        .m10 {
+            margin: 10px;
+        }
+        .p10 {
+            padding: 10px;
+        }
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="demo">div</div>
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(function(){
+
+        var element = $('#demo');
+
+        // element.addClass('red');
+        // element.addClass('b10 m10 p10');
+        // element.removeClass('b10 m10 p10');
+
+        element.addClass(function (index, className) {
+           // console.log(index);
+           // console.log(className);
+           return 'red';
+        });
+
+        element.removeClass(function (index, className){
+            // console.log(index);
+            // console.log(className);
+            // return 'red';
+        });
+
+        // if(element.hasClass('hide')) {
+        //     element.removeClass('hide');
+        // }else{
+        //     element.addClass('hide');
+        // }
+
+        element.toggleClass('hide');
+        // console.log(element);
+
+        $('li').each(function(index){
+            $(this).toggleClass('red', index % 3 === 0);
+        })
+        element.toggleClass('hide box red');
+    });
+</script>
+</body>
+</html>

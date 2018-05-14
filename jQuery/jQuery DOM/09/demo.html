@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <mate charset="UTF-8"/>
+    <title>demo</title>
+</head>
+<body>
+    <img id="logo" src="../logo.jpg" alt="jQuery logo" class="img-jquery" title="jQuery logo"
+         data-id="1" date-data1="html data1"/>
+    <img id="logo2" src="../logo.jpg" alt="jQuery logo" class="img-jquery2" title="jQuery logo"
+         data-foo-42="bar"/>
+    <input type="checkbox" id="check" tabIndex="1" style="width: 50px;height: 50px;" title="Check this!"
+    description="just a checkbox"/>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(function() {
+
+        var img = $('img');
+        var checkbox = $('#check');
+
+        img.data('description', 'jquery logo');
+        console.log(img.data('description'));
+
+        img.data('lastDescription', 'old description');
+        console.log(img.data('lastDescription'));
+        console.log(img.data('last-description'));
+        console.log(img.data('last-Description'));
+
+
+        console.log(img.data('LastDescription'));
+        console.log(img.data('Last-Description'));
+
+        img.data('dataObject', {
+           foo: 'bar'
+        });
+        img.data('dataArray', [1,2,3])
+        img.data('dataBoolean',false);
+
+        console.log(img.data('dataObject'));
+        console.log(img.data('dataArray'));
+        console.log(img.data('dataBoolean'));
+
+        img.data('dataUndefined',undefined);
+        console.log(img.data('dataUndefined'));
+
+        img.data({
+           data1: 'data1',
+           data2: 'data2',
+           data3: 'data3'
+        });
+
+        console.log(img.data());
+        console.log(img.eq(0).data());
+        console.log(img.eq(1).data());
+
+        console.log(img.data('data1'));
+        console.log(img.attr('data-data1'));
+
+        console.log($('#logo2').data());
+        console.log($('#logo2').data('foo-42'));
+
+        console.log("===============================================");
+        $('#logo').data('test','test');
+        $('#logo').removeData();
+        console.log($('#logo').data());
+
+
+        console.log($.hasData(document.getElementById('logo')));
+        console.log($.hasData(document.getElementById('check')));
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>position</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: #cccccc;
+        }
+        .item {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="demo">
+        <div class="item"></div>
+    </div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(function(){
+
+        var demo = $('#demo');
+        var element = $('.item');
+
+        console.log(element.offset());
+        console.log(element.position());
+
+        demo.css({
+            left: 10,
+            top: 20
+        });
+
+        element.css({
+            left: 10,
+            top: 20
+        });
+
+        console.log(element.offset());
+        console.log(element.position());
+
+
+        demo.css({
+           overflow: 'hidden'
+        });
+        element.css({
+           margin:20
+        });
+        console.log(element.offset());
+        console.log(element.position());
+    });
+</script>
+</body>
+</html>

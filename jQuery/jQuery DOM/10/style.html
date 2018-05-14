@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>style</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="demo">div</div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+
+    $(function(){
+        var element = $('#demo');
+
+        element.css('width', 200);
+
+        element.css({
+            'background-color': 'red',
+            height:200,
+            'border':'10px solid #000',
+            marginTop: 100,
+            mArGinLeft: 100,
+            width: '+=200'
+        });
+
+        element.css('height', function(index, value) {
+           console.log(value);
+           return parseInt(value, 10) + 50;
+        });
+
+        console.log(element.css('height'));
+        console.log(element.css(['height','width','border']));
+
+        console.log(element.width());
+        console.log(element.height());
+
+        element.css({
+            width: '50%',
+            height: '30em'
+        });
+
+        console.log(element.width());
+        console.log(element.height());
+
+        element.css({
+            width: 100,
+            height: 100,
+            border: '10px solid #000',
+            margin: 20,
+            padding: 30
+        });
+        console.log("333333333333333");
+        console.log(element.width());
+        console.log(element.height());
+        console.log(element.innerWidth());
+        console.log(element.innerHeight());
+        console.log(element.outerWidth());
+        console.log(element.outerHeight());
+        console.log(element.outerWidth(true));
+        console.log(element.outerHeight(true));
+
+        console.log(element.offset());
+
+        element.css({
+           position: 'absolute',
+            width: 100,
+            height: 100,
+            border: '10px solid #000',
+            margin: 20,
+            padding: 30,
+            left: 200,
+            top: 100
+        });
+        console.log(element.offset());
+
+        element.offset({
+            top: 50,
+            left: 100
+        })
+        console.log(element.offset());
+
+        console.log(element.position());
+
+
+    });
+
+</script>
+</body>
+</html>
