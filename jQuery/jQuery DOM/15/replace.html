@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>replace</title>
+</head>
+<body>
+    <h2>title</h2>
+    <div class="item">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <ul>
+        <li class="item1">新闻标题-1</li>
+        <li class="item2">新闻标题-2</li>
+        <li class="item3">新闻标题-3</li>
+        <li class="item4">新闻标题-4</li>
+        <li class="item5">新闻标题-5</li>
+        <li class="item6">新闻标题-6</li>
+        <li class="item7">新闻标题-7</li>
+        <li class="item8">新闻标题-8</li>
+        <li class="item9">新闻标题-9</li>
+    </ul>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(function(){
+            var element = $('ul');
+
+            $('h2').clone().appendTo(element);
+
+            $('.item').data('item','item');
+            $('p').data('p','p');
+
+            $('.item').clone(true,false).appendTo(element);
+
+            console.log($('ul .item').data());
+            console.log($('ul p').data());
+
+            console.log(element);
+            $('h2').replaceWith('<p>hello</p>')
+            $('<p>hello</p>').replaceAll($('li'));
+        });
+    </script>
+</body>
+</html>

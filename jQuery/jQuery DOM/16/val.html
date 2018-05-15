@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>val</title>
+</head>
+<body>
+
+<form>
+    <p><input type="text" name="text"></p>
+    <p>
+        <input type="radio" name="radio" value="1"> radio 1
+        <input type="radio" name="radio" value="2"> radio 2
+    </p>
+    <p>
+        <input type="checkbox" name="checkbox" value="1"> checkbox1
+        <input type="checkbox" name="checkbox" value="2"> checkbox2
+    </p>
+    <p>
+        <select name="select">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+        </select>
+    </p>
+    <p>
+        <select name="multiSelect" multiple>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </p>
+</form>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(function(){
+        console.log($('[name=aaa]').val());
+        console.log($('[name=text]').val());
+        console.log($('[name=radio]').val());
+        console.log($('[name=radio]:checked').val());
+
+        console.log("===========");
+        console.log($('[name=select] option').val());
+        console.log($('[name=select] option:selected').val());
+        // console.log($('[name=select]:selected').val());
+
+        console.log("===========");
+        console.log($('[name=multiSelect]').val());
+        console.log(
+            $('[name="checkbox"]:checked').map(function(){
+                return $(this).val();
+            }).toArray()
+        );
+
+        $('[name=text]').val('text');
+        $('[name=select]').val('2');
+        $('[name=radio]').val(['1']);
+        $('[name=checkbox]').val(['2']);
+        $('[name=multiSelect]').val(['1','2']);
+
+
+
+    });
+</script>
+</body>
+</html>

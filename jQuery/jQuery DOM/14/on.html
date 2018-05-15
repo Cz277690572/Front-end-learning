@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charet="UTF-8" />
+    <title>on</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, veritatis.</p>
+    <div class="item"></div>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(function(){
+
+
+            var element = $('p');
+            element.on('click',function() {
+               $(this).css('fontSize', '+=5')
+            }).data('data','demo');
+
+            console.log(element);
+
+            element.appendTo($('.item'));
+
+            console.log(element.data());
+
+            element.empty();
+
+        });
+    </script>
+</body>
+</html>
