@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>positionFilter</title>
+	<style>
+	.highlight {
+		background-color: yellow;
+	}
+	</style>
+</head>
+<body>
+<ul>
+	<li>list-01</li>
+	<li>list-02</li>
+	<li>list-03</li>
+	<li>list-04</li>
+	<li>list-05</li>
+	<li>list-06</li>
+	<li>list-07</li>
+	<li>list-08</li>
+	<li>list-09</li>
+	<li>list-10</li>
+	<li>list-11</li>
+</ul>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+	$(function(){
+		// console.log($('li:first').addClass('highlight'));
+		// console.log($('li:last').addClass('highlight'));
+		// console.log($('li:even').addClass('highlight'));
+		// console.log($('li:odd').addClass('highlight'))
+		// console.log($('li:eq(2)').addClass('highlight'))
+		// console.log($('li:gt(2)').addClass('highlight'));
+		console.log($('li:lt(2)').addClass('highlight'))
+	});
+</script>
+</body>
+</html>

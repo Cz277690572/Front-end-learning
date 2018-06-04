@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		#test1 {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+		#test2 {
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+<div id="test1"></div>
+<div id="test2"></div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+	$(function(){
+		$('#test1').click(function(){
+			$('#test2').width($('#test2').width() + 10).height($('#test2').height() + 10);
+		});
+	});
+</script>
+</body>
+</html>
