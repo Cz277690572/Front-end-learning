@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d94bbcf3-bb49-43c2-a6e8-d51e12b43d2b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/jQuery/jQuery DOM/13/wrap.html" afterPath="$PROJECT_DIR$/jQuery/jQuery DOM/13/wrap.html" />
+      <change beforePath="$PROJECT_DIR$/jQuery/jQuery DOM/16/val.html" afterPath="$PROJECT_DIR$/jQuery/jQuery DOM/16/val.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,94 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="class.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/10/class.html">
+      <file leaf-file-name="chaining.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jQuery/jQuery选择器/chaining.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scroll.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/10/scroll.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/10/style.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/11/text.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="33" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="append.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/12/append.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="52" />
-              <folding>
-                <marker date="1526295263640" expanded="true" signature="639:645" ph=" " />
-                <marker date="1526295263640" expanded="true" signature="645:651" ph=" " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wrap.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/13/wrap.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="on.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/14/on.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="replace.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/15/replace.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="24" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="val.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/16/val.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="58" />
+            <state relative-caret-position="168">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -115,6 +32,7 @@
       <find>item6</find>
       <find>img</find>
       <find>dataObject</find>
+      <find>checkbox</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,6 +64,7 @@
         <option value="$PROJECT_DIR$/jQuery/jQuery DOM/14/on.html" />
         <option value="$PROJECT_DIR$/jQuery/jQuery DOM/15/replace.html" />
         <option value="$PROJECT_DIR$/jQuery/jQuery DOM/16/val.html" />
+        <option value="$PROJECT_DIR$/jQuery/jQuery选择器/chaining.html" />
       </list>
     </option>
   </component>
@@ -157,10 +76,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="886" />
-    <option name="y" value="26" />
-    <option name="width" value="1035" />
-    <option name="height" value="980" />
+    <option name="x" value="824" />
+    <option name="y" value="17" />
+    <option name="width" value="1086" />
+    <option name="height" value="982" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -180,6 +99,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,13 +116,12 @@
               <item name="Front-end learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="Front-end learning" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="jQuery" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="jQuery DOM" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="jQuery选择器" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -247,12 +166,15 @@
       <workItem from="1526000918549" duration="19070000" />
       <workItem from="1526262169174" duration="13672000" />
       <workItem from="1526346853237" duration="738000" />
-      <workItem from="1526358591177" duration="6483000" />
+      <workItem from="1526358591177" duration="6810000" />
+      <workItem from="1526374724273" duration="43000" />
+      <workItem from="1526447344759" duration="983000" />
+      <workItem from="1526534234561" duration="343000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53815000" />
+    <option name="totallyTimeSpent" value="55511000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -264,9 +186,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="886" y="26" width="1035" height="980" extended-state="0" />
+    <frame x="824" y="17" width="1086" height="982" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23282051" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23586744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -274,7 +197,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41656804" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41587678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -297,6 +220,81 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/10/class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/10/scroll.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/10/style.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/11/text.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="33" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/12/append.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="52" />
+          <folding>
+            <marker date="1526295263640" expanded="true" signature="639:645" ph=" " />
+            <marker date="1526295263640" expanded="true" signature="645:651" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/13/wrap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/14/on.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/15/replace.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="24" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/16/val.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/10/class.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -566,7 +564,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/13/wrap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
+        <state relative-caret-position="336">
           <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="52" />
           <folding />
         </state>
@@ -582,7 +580,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/15/replace.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="483">
           <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="24" selection-end-column="12" />
           <folding />
         </state>
@@ -590,8 +588,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jQuery/jQuery DOM/16/val.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="58" />
+        <state relative-caret-position="42">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery选择器/chaining.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding />
         </state>
       </provider>
