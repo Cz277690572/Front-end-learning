@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>optimization</title>
+</head>
+<body>
+<div>
+	<ul id="list" class="list">
+		<li>list-01</li>
+		<li class="item2">list-02</li>
+		<li>list-03</li>
+		<li class="item4">list-04</li>
+		<li>list-05</li>
+		<li>list-06</li>
+		<li>list-07</li>
+		<li>list-08</li>
+		<li>list-09</li>
+		<li>list-10</li>
+		<li>list-11</li>
+	</ul>
+</div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+	function logTime(e){
+		console.time('logTime');
+		if(typeof e === 'function'){
+			for (var i = 0; i < 1000; i++) {
+				e();
+			}
+		}
+		console.timeEnd('logTime');
+	}
+	$(function(){
+
+		// logTime(function(){
+		// 	$('ul li:even');
+		// })
+		// logTime(function(){
+		// 	$('ul li:nth-child(odd)');
+		// })
+		// logTime(function(){
+		// 	document.querySelectorAll('ul li:nth-child(odd)');
+		// })
+		// logTime(function(){
+		// 	$(document.querySelectorAll('ul li:nth-child(odd)'));
+		// })
+
+		// logTime(function(){
+		// 	$('.list li.item2'); // better
+		// })
+		// logTime(function(){
+		// 	$('#list li.item2'); // Faster than the rest
+		// })
+		// logTime(function(){
+		// 	$('ul.list .item2'); // slow
+		// })
+
+		// logTime(function(){
+		// 	$('ul');	// slow
+		// })
+		// logTime(function(){
+		// 	$('.list');  //better
+		// })
+
+		
+		logTime(function(){ // slow
+			$('#list .item2');
+			$('#list .item4');
+		})
+
+		logTime(function(){ // better
+			var ul = $('#list');
+			ul.find('.item2');
+			ul.find('.item4');
+		})
+	});
+
+</script>
+</body>
+</html>

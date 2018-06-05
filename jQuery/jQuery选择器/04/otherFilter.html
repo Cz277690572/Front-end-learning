@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>otherFilter</title>
+	<style>
+		.highlight {
+			background-color: yellow;
+		}
+	</style>
+</head>
+
+<body>
+	<P id="foo" lang="en-US"> :lang选择器,匹配有一个语言值等于所提供的语言代码，或以提供的语言代码开始，后面马上跟一个“ - ”的元素。例如，选择器$("div:lang(en)")将匹配<\div lang="en"> and <\div lang="en-us">（和他们的后代<\div>），但不包括<\div lang="fr">
+	:header  V1.2概述   匹配如 h1, h2, h3之类的标题元素示例</P>
+	<p target>:animated	V1.2概述 	匹配所有正在执行动画效果的元素	示例</p>
+	<input type="text">
+	<input type="hidden">
+	<p style="display: none;">:focus
+概述
+匹配当前获取焦点的元素。
+如同其他伪类选择器（那些以":"开始），建议:focus前面用标记名称或其他选择;否则，通用选择("*")是不言而喻的。换句话说，$(':focus')等同为$('*:focus')。如果你正在寻找当前的焦点元素，$( document.activeElement )将检索，而不必搜索整个DOM树。</p>
+<p style="visibility: hidden;">:lt(index)	概述	匹配所有小于给定索引值的元素	参数	indexNumberV1.0	从 0 开始计数 $("tr:lt(2)")</p>
+<p style="opacity: 0">:gt(index)	概述	匹配所有大于给定索引值的元素	参数	indexNumberV1.0	从 0 开始计数</p>
+<h1>h1. 标题</h1>
+<h2>h2. 标题</h2>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+	$(function(){
+
+		// console.log($(':lang(en)').addClass('highlight'));
+		// console.log($('p:not(#foo)').addClass('highlight'));
+		// console.log($(':root').addClass('highlight'));
+		// console.log($('p:target').addClass('highlight'));
+		// setTimeout(function(){
+		// 	console.log($(':target').addClass('highlight'));
+		// },2000);
+		// console.log($('p:hidden').addClass('highlight'));
+		// console.log($(' :visible').addClass('highlight'));
+
+		console.log($(' :header').addClass('highlight'));
+
+	});
+</script>
+</body>
+</html>

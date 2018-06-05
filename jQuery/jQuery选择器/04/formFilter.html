@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gormFilter</title>
+	<style>
+		.highlight {
+			padding: 10px;
+			border: 1px solid yellow;
+			background: lightyellow;
+		}
+	</style>
+</head>
+<body>
+<form>
+	<p><input value="input without type"></p>
+	<p><input type="text" value="input type text" autofocus></p>
+	<p><input type="text" value="input type text disabled" disabled></p>
+	<p><input type="password" value="input type password"></p>
+	<p><input type="checkbox"> input type checkbox</p>
+	<p><input type="checkbox" checked> input type checkbox checked</p>
+	<p><input type="radio"> input type radio</p>
+	<p><input type="radio" checked> input type radio checked</p>
+	<p><input type="file"></input></p>
+	<p><input type="image" src="../../jQuery DOM/logo.jpg"></p>
+	<p><select></select></p>
+	<p><select>
+		<option value="">--请选择--</option>
+		<option value="1">option 1</option>
+		<option value="2" selected>option 2</option>
+		<option value="3">option 3</option>
+		<option value="4">option 4</option>
+	</select></p>
+	<P><textarea cols="30" rows="10"></textarea></P>
+	<p><input type="submit" value="input type submit"></p>
+	<p><input type="reset" value="input type reset"></p>
+	<p><input type="button" value="input type button"></p>button
+</form>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+	$(function(){
+		// console.log($(':checked').parent().addClass('highlight'));
+		// console.log($(':disabled').parent().addClass('highlight'))
+		// console.log(':enabled').parent().addClass('highlight');
+		// setTimeout(function(){
+		// 	console.log($(':focus').parent().addClass('highlight'));
+		// },1000);
+		// console.log($(':button').parent().addClass('highlight'))
+		// console.log($(':checkbox').parent().addClass('highlight'))
+		// console.log($(':file').parent().addClass('highlight'))
+		// console.log($(':image').parent().addClass('highlight'))
+		// console.log($(':input').parent().addClass('highlight'))
+		// console.log($(':password').parent().addClass('highlight'))
+		// console.log($(':radio').parent().addClass('highlight'))
+		// console.log($(':reset').parent().addClass('highlight'))
+		// console.log($(':selected').parent().addClass('highlight'))
+		// console.log($(':submit').parent().addClass('highlight'))
+		console.log($(':text').parent().addClass('highlight'))
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>contentFilter</title>
+	<style type="text/css">
+		.highlight {
+			padding: 10px;
+			border:1px solid yellow;
+			background: lightyellow;
+		}
+	</style>
+</head>
+<body>
+<p></p>
+<p></p>
+<p>Lorem ipsum dolor sit amet,consectetur adipisicing elit. Delectus, earnum.</p>
+<p>123 <span>23423</span></p>
+<input type="text" value="input">
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+	$(function(){
+		// console.log($(':empty').addClass('highlight'));
+		// console.log($('p:contains("Lorem")').addClass('highlight'));
+		// console.log($('p:has("span")').addClass('highlight'));
+		console.log($('p:parent').addClass('highlight'));
+	});
+</script>
+</body>
+</html>

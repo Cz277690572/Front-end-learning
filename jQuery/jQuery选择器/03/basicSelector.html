@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>basicSelector</title>
+	<style type="text/css">
+		.highlight {
+			background-color: yellow;
+		}
+		.borColor {
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+<h1>h1. 标题</h1>
+<h1>h2. 标题</h1>
+
+<p id="p1">var div = document.getElementById('div');   div.setAttribute("class", "abc");</p>
+
+<ul class="list">
+	<li>list1</li>
+	<li>list2</li>
+	<ul>
+		<li>list2-1</li>
+		<li>list2-2</li>
+		<li>list2-3</li>
+	</ul>
+	<li>list3</li>
+</ul>
+<a href="http://www.baidu.com" target="_blank">百度</a>
+<a href="http://www.163.com">网易</a>
+<a href="#">本地</a>
+
+<p data-id="1">
+	var div = document.getElementById('div');   
+	div.setAttribute("className", "abc");</p>
+
+<p>
+	var div = document.getElementById('div');   
+	div.className = 'abc';</p>
+<input type="text" name="username">
+<script src="http://code.jquery.com/jquery-latest.js"></script>	
+<script>
+	$(function(){
+
+		// console.log($('#p1').addClass('highlight'));
+		// console.log($('.list').addClass('highlight'));
+		// console.log($('.list > li').addClass('highlight'));
+		// console.log($('a[href="http://www.baidu.com"]').addClass('highlight'));
+		// console.log($('a[href*="www"]').addClass('highlight'));
+		// console.log($('a[href^="http"]').addClass('highlight'));
+		// console.log($('a[href$="com"]').addClass('highlight'));
+		// console.log($('a[href][target]').addClass('highlight'));
+		// console.log($('a[href!="http://www.baidu.com"]').addClass('highlight'));
+
+		// console.log($('p[data-id="1"]').addClass('highlight'))
+		// console.log($('input[name="username"]').addClass('borColor'))
+		// console.log($('[name="username"]').addClass('borColor'))
+		console.log($('input:text[name="username"]').addClass('borColor'))
+
+
+	});
+</script>
+</body>
+</html>

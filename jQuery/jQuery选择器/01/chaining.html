@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>chaining</title>
+<style>
+    body {
+        font-size: 30px;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .blod {
+        font-size: 40px;
+        font-weight: bold;
+    }
+</style>
+<body>
+<div id="divTest" class="blue">
+    test
+</div>
+<div id="divTest2">
+    <p>123</p>
+    <p class="child">123</p>
+    <p>123</p>
+</div>
+</body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script>
+    setTimeout(function (){
+        // $('#divTest').text('Hello,World');
+        // $('#divTest').removeClass('blue');
+        // $('#divTest').addClass('blod');
+        // $('#divTest').css('color','red');
+
+        $('#divTest')
+            .text('Hello jquery!')
+            .removeClass('blue')
+            .addClass('blod')
+            .css('color','red');
+
+        $test = $('#divTest2');
+        console.log($test);
+        $test2 = $('#divTest2').get(0);
+        console.log($test2);
+
+        $('#divTest2')
+            .find('p.child')
+            .css('color','red')
+            .end()
+            .addClass('blod');
+    
+    },2000)
+</script>
+</html>

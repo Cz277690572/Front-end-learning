@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>example</title>
+</head>
+<body>
+<form>
+	<input type="radio" name="test" value="dog">狗</input>
+	<input type="radio" name="test" value="cat" checked>猫</input>
+	<input type="radio" name="test" value="pig">猪</input>
+</form>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script>
+	var checkedValue;
+	var elements = document.getElementsByTagName('input');
+	console.log(elements);
+	for (var i = elements.length - 1; i >= 0; i--) {
+		if(elements[i].type === 'radio' && elements[i].name === 'test' && elements[i].checked){
+			checkedValue = elements[i].value;
+		}
+	}
+	console.log(checkedValue);
+</script>
+<script>
+	// var checkedValue = $('input:radio[name="test"]:checked').val();
+	// console.log(checkedValue);
+</script>
+</body>
+</html>

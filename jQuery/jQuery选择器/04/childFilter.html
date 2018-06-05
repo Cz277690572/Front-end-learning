@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>childFilter</title>
+	<style>
+		.highlight {
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+<ul>
+	<li>list-0</li>
+	<li>list-1</li>
+	<li>list-3</li>
+	<li>list-4</li>
+	<li>list-5</li>
+	<li>list-6</li>
+	<li>list-7</li>
+	<li>list-8</li>
+	<li>list-9</li>
+	<li>list-10</li>
+</ul>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script>
+	$(function(){
+		// console.log($('li:first-child').addClass('highlight'));
+		// console.log($('li:last-child').addClass('highlight'));
+		// console.log($('li:first-of-type').addClass('highlight'));
+		// console.log($('li:last-of-type').addClass('highlight'));
+		// console.log($('li:nth-child(2)').addClass('highlight'))
+		// console.log($('li:nth-child(2n)').addClass('highlight'))
+		// console.log($('li:nth-child(odd)').addClass('highlight'))
+		console.log($('li:nth-child(even)').addClass('highlight'));
+	});
+</script>
+
+</body>
+</html>
