@@ -137,6 +137,44 @@ $.fn.uiSlider = function(){
 
 }
 
+// ui-cascading
+$.fn.UiCascading = function(){
+	var ui = $(this);
+	var selects = $('select',ui);
+	console.log(selects);
+
+	selects
+	.on('change',function(){
+		var val   = $(this).val();
+		var index = selects.index(this);
+		// 触发下一个select的更新，根据当前的值
+		var where = $(this).attr('data-where');
+		where = where ? where.split(',',where) : [];
+		where.push( $(this).val );
+		selects.eq(index+1)
+			.attr('data-where',where,join(','))
+			.triggerHandler('reloadOptions');
+		// 触发下一个之后select的初始化(清除不应该的数据项)
+		ui.find('select:gt('+(index+1)+')').each(function(){
+			$(this)
+			.attr('data-where','')
+			.triggerHandler('reloadOptions');
+		})
+	})
+	.on('reloadOptions',function(){
+		var method = $(this).attr('data-search');
+		var args   = $(this).attr('data-where').split(',');
+		var data   = AjaxRemoteGetData[ method ].apply(this,args)
+
+		var select = $(this);
+		select.find('option').remove();
+		$.each('data',function(i,item){
+			var el = $('<option value="'+item+'">'+item+'</option>');
+			select.append(el);
+		})
+	})
+}
+
 // 页面的脚本逻辑
 $(function(){
 	$('.ui-search').UiSearch();
@@ -147,4 +185,6 @@ $(function(){
 	$('body').UiBackTop();
 
 	$('.ui-slider').uiSlider();
+
+	$('.ui-cascading').UiCascading();
 })
