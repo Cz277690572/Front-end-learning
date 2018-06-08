@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8"/>
+	<title>普通分页码</title>
+	<style>
+		a{
+			text-decoration: none;
+		}
+		.page{
+			text-align: center;
+			font-size: 0;
+		}
+		.page a:hover{
+			border: 1px solid #ff6500;
+			background: #ffbe94;
+			color: #ff6500;
+		}
+		.page span:hover{
+			border: 1px solid #ff6500;
+			background: #ffbe94;
+			color: #ff6500;
+		}
+		.prev,
+		.next,
+		.item{
+			display: inline-block;
+			padding: 5px 7px;
+			border: 1px solid #ffe346;
+			font-size: 18px;
+			margin-left: 10px;
+			color: #ffe346;
+		}
+		.item_focus{
+			border: 1px solid #ff6500;
+			background: #ffbe94;
+			color: #ff6500;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="page">
+		<span class="prev">&lt;</span>
+		<a class="item item_focus" href="">1</a>
+		<a class="item" href="">2</a>
+		<a class="item" href="">3</a>
+		<a class="item" href="">4</a>
+		<a class="item" href="">5</a>
+		<a class="item" href="">6</a>
+		<a class="item" href="">7</a>
+		<a class="item" href="">8</a>
+		<a class="item" href="">9</a>
+		<a class="item" href="">...</a>
+		<a class="item" href="">199</a>
+		<a class="item" href="">200</a>
+		<a class="item" href="">201</a>
+		<span class="next">&gt;</span>
+	</div>
+</body>
+</html>

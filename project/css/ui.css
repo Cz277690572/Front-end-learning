@@ -52,6 +52,96 @@
 	height: 36px;
 }
 
+/*导航栏菜单*/
+.ui-menu-item{
+	height: 22px;
+	line-height: 22px;
+	padding: 8px 5px 9px 6px;
+	margin-left: 2px;
+}
+.ui-menu-item:hover{
+	background: #fff;
+}
+.ui-menu-item:hover .ui-menu-item-department{
+	color: #333;
+}
+.ui-menu-item:hover .ui-menu-item-disease{
+	color: #868686;
+}
+.ui-menu-item:hover .ui-menu-item-department:before{
+	background-position-x: 0;
+}
+.ui-menu-item:hover .ui-menu-item-detail{
+	display: block;
+}
+.ui-menu-item-department{
+	float: left;
+	height: 22px;
+	line-height: 22px;
+	position: relative;
+	padding-left: 30px;
+	font-size: 13px;
+	color: #fff;
+}
+.ui-menu-item-department:before{
+	content:"";
+	display: block;
+	width: 22px;
+	height: 21px;
+	position: absolute;
+	left: 0;
+	top: 1px;
+	background: url('../img/icon-menu.jpg') -22px 0 no-repeat;
+}
+
+.ui-menu-item-disease{
+	float: right;
+	font-size: 12px;
+	color: #d7f3ff;
+	float: right;
+	padding-left: 5px;
+}
+.ui-menu-item-detail{
+	display: none;
+	background: #fff url(../img/bg-menu.jpg) center no-repeat;
+	position: absolute;
+	top: 0;
+	left: 190px;
+	width: 500px;
+	height: 392px;
+	padding: 20px 10px 10px 29px;
+	z-index: 1;
+}
+.ui-menu-item-detail-group{
+	padding-bottom: 20px;
+	text-align: left;
+}
+.ui-menu-item-detail-group-caption{
+	width: 100%;
+	display: block;
+	height: 34px;
+	line-height: 34px;
+	color: #666;
+	font-size: 14px;
+}
+.ui-menu-item-detail-group-list{
+	line-height: 23px;
+}
+.ui-menu-item-detail-group-list a{
+	display: inline-block;
+	color: #868686;
+	margin-right: 12px;
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+.ui-menu-item-detail-group-list a:hover{
+	color: #006DB3;
+}
+.ui-menu-item-detail-group-list a:after{
+	content: '|';
+}
+
+
 /* 幻灯片 */
 .ui-slider{
 	overflow: hidden;
