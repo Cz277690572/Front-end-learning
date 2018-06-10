@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+	<title>按医院挂号</title>
+	<link rel="stylesheet" type="text/css" href="./css/index.css" />
+	<link rel="stylesheet" type="text/css" href="./css/base.css" />
+	<link rel="stylesheet" type="text/css" href="./css/hospital.css" />
+	<link rel="stylesheet" type="text/css" href="./css/ui.css" />
+</head>
+<body>
+	<div id="top" class="top">
+		<div class="wrap">
+			<P class="call">联系电话 -- 487738327</P>
+			<p class="welcome">欢迎来到城市预约挂号统一平台
+				<a href="">登录</a>
+				<a href="">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="">帮助中心</a></p>
+		</div>
+	</div>
+	<div id="header" class="header">
+		<div class="wrap">
+			<a href="#"  class="logo"><img src="./img/logo.png" alt="logo"></a>
+			<div class="search ui-search">
+				<div class="ui-search-selected">医院</div>
+				<div class="ui-search-select-list" style="display: none;">
+					<a href="#">科室</a>
+					<a href="#">疾病</a>
+					<a href="#">医院</a>
+				</div>
+				<input type="text" name="" class="ui-search-input" placeholder="请输入搜索内容" />
+				<a href="#" class="ui-search-submit">&nbsp;</a>
+			</div>
+		</div>
+	</div>
+	<div id="nav" class="nav">
+		<div class="wrap">
+			<div class="link">首页</div>
+			<a href="#" class="link link-focus">按医院挂号</a>
+			<a href="#" class="link">按课室挂号</a>
+			<a href="#" class="link">按疾病挂号</a>
+			<a href="#" class="link">最新公告</a>
+			<a href="#" class="link right">社会知名医院</a>
+		</div>
+	</div>
+
+	<div class="filter" id="filter">
+		<div class="wrap">
+			<div class="type">
+				<div class="caption">
+					医院类型
+				</div>
+				<span class="line"></span><a href="#" class="condition condition-focus">全部</a>
+				<span class="line"></span><a href="#" class="condition">卫生部直属医院</a>
+				<span class="line"></span><a href="#" class="condition">卫生部直属医院</a>
+				<span class="line"></span><a href="#" class="condition">卫生部直属医院</a>
+			</div>
+			<div class="level">
+				<div class="caption">
+					医院等级
+				</div>
+				<span class="line"></span><a href="#" class="condition condition-focus">全部</a>
+				<span class="line"></span><a href="#" class="condition">三级甲等</a>
+				<span class="line"></span><a href="#" class="condition">三级合格</a>
+			</div>
+			<div class="address">
+				<div class="caption">
+					医院位置
+				</div>
+				<span class="line"></span><a href="#" class="condition condition-focus">全部</a>
+				<span class="line"></span><a href="#" class="condition">朝阳区</a>
+				<span class="line"></span><a href="#" class="condition">西城区</a>
+				<span class="line"></span><a href="#" class="condition">丰台区</a>
+			</div>
+		</div>
+	</div>
+	<div class="datalist" id="datalist">
+		<div class="wrap">
+			<div class="list">
+				<div class="item">
+					<div class="item-left">
+						<img src="./img/hospital-1.jpg" alt="医院loge"/>
+						<div class="item-name">首都医院大学附属北京同仁医院<span class="item-level">三级甲等</span></div>
+						<div class="item-time"><span class="text">放号时间 8:30</span></div>
+						<div class="item-tel"><span class="text">电话：010-1234567</span></div>
+						<div class="item-address"><span class="text">地址：北京市东城区东教民巷1号(西区)</span></div>
+					</div>
+					<div class="item-right">
+						现在预约
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pagination" id="pagination"></div>
+
+	<div id="footer" class="footer">
+		Copyright &copy; 2018前端小白版权所有
+	</div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="./js/ui.js"></script>
+</body>
+</html>

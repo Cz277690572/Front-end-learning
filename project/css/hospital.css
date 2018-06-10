@@ -1,0 +1,118 @@
+.nav .link-focus{
+	background-color: #1fa4f0;
+	padding: 0px 12px;
+}
+
+.filter{
+	padding:40px 0;
+}
+.filter .level,
+.filter .address,
+.filter .type{
+	background-color: #fbfbfb;
+	height: 120px;
+	font-size: 15px;
+	color: #4c4948;
+}
+.filter .caption{
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	margin: 42px 42px ;
+}
+.filter .condition{
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 10px;
+	margin-left: 5px;
+	color: #4c4948;
+}
+.filter .condition:hover{
+	background-color: #60bff2;
+	color: #fff;
+}
+.filter .condition-focus{
+	background-color: #60bff2;
+	color: #fff;
+}
+.filter .line{
+	display: inline-block;
+	border-right: 2px #dcdddd solid;
+	height: 36px;
+	margin: -11px 20px;
+}
+
+/*列表数据*/
+.datalist{
+	padding: 10px 8px;
+}
+.datalist .item{
+	height: 110px;
+	padding: 10px 0px 0px 180px;
+	border:1px solid #fbfbfb;
+	position: relative;
+}
+.datalist .item-left{
+	width: 500px;
+	float: left;
+}
+.datalist .item img{
+	position: absolute;
+	width: 150px;
+	height: 100px;
+	left: 8px;
+}
+.datalist .item .item-name{
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+}
+.datalist .item .item-name .item-level{
+	display: inline-block;
+	color: #fec009;
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+.datalist .item .item-tel,
+.datalist .item .item-address,
+.datalist .item .item-time{
+	padding: 2px 0;
+}
+.datalist .item .item-address .text,
+.datalist .item .item-tel .text,
+.datalist .item .item-time .text{
+	color: #666;
+	font-size:12px;
+	display: block;
+	height: 20px;
+	padding-left: 22px;
+	background: url(../img/icon-tel.png) no-repeat  0 0;
+	background-position: 0px -35px;
+}	
+.datalist .item .item-tel .text{
+	background-position: 0px 2px;
+}
+.datalist .item .item-address .text{
+	background-position: 0px -16px;
+}
+.datalist .item .item-right{
+	display: inline-block;
+	margin-top: 35px;
+	margin-right: 80px;
+	text-align: center;
+	width: 100px;
+	height: 30px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 30px;
+	background-color: #fecd09;
+	float: right;
+}
+.datalist .item .item-right .text{
+	
+}
